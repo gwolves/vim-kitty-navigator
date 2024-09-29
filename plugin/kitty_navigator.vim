@@ -59,7 +59,7 @@ function! s:KittyAwareNavigate(direction)
   let can_navigate_in_layout = !kitty_is_in_stack_layout || stack_layout_enabled 
   
 
-  if (kitty_last_pane || at_tab_page_edge) && can_navigate_in_layout 
+  if (kitty_last_pane || at_tab_page_edge)
     let mappings = {
     \   "h": "left",
     \   "j": "bottom",
